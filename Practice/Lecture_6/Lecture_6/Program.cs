@@ -5,20 +5,19 @@ namespace Lecture_6
     class Program
     {
         static void Main(string[] args)
-        { char letter;
+        {   char letter = 'a' ;
+            int quantity = 0;
             Console.WriteLine("Введите несколько слов:");
             string str = Console.ReadLine();
-            for (int i = 0; i > str.Length; i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                int quantity = 0;
-                if (str.Contains("a"))
+
+                if (str[i] == letter)
                 {
                     quantity ++;
-                }
-                i++;
-                
+                }                                               
             }
-            Console.WriteLine(str);
+            Console.WriteLine("Количество букв а = "+quantity);
             Console.ReadLine();
         }
     }
