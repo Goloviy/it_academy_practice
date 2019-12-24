@@ -8,9 +8,7 @@ namespace lecture7
         {
             //Создать пустой массив нельзя, обязательно нужно указать его размер, можно создать массив с пустыми значениями,
             // для челочисленных значений будет значение 0.
-            int[] array = new int[10];
-
-            
+            int[] array = new int[10];            
         }
 
         static void Task2 ()
@@ -50,12 +48,20 @@ namespace lecture7
         static void Task3 ()
         {
             int[] array = new int[13];
-            
+            int max  = 0;
             for( int i = 0; i < array.Length; i++)
             {                
                 Random rnd = new Random();
                 array[i] = rnd.Next();
                 Console.WriteLine(array[i]);
+                if(max < array[i])
+                {
+                    max = array[i];
+                }
+                if (i == 12)
+                {
+                    Console.WriteLine(max);
+                }
             }
         }        
 
