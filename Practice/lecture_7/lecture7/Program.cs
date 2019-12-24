@@ -18,7 +18,36 @@ namespace lecture7
             array[0] = 32;
             array[1] = 'A';
             array[2] = "Hello";
+
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);                
+            }
+           
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+                i += 2;
+            }
+
+            for (int i = 0; i < array.Length; i++)
+            {   if (i == 0)
+                {
+                    //array[i] = (int)array[i];
+                    int sum =(int)array[i]+10;
+                    Console.WriteLine(sum);
+                }
+                if (i == 2)
+                {
+                    Console.WriteLine(array[i] + " guys!");
+                }
+            }
+
+
+
         }
+
+        
 
     }
 }
