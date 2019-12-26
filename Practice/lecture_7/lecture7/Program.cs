@@ -24,7 +24,7 @@ namespace lecture7
                 Console.WriteLine(array[i]);                
             }
            
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length;)
             {
                 Console.WriteLine(array[i]);
                 i += 2;
