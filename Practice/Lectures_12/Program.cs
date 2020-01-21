@@ -6,7 +6,10 @@ namespace Lectures_12
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Random rnd = new Random();
+            Circle circle = new Circle();
+            circle.Side = rnd.Next(1, 10);
+            
         }
     }
 }
