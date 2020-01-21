@@ -18,7 +18,7 @@ namespace Lectures_12
             return side * side;
         }
 
-        public void Display()
+        public void Display(string name)
         {
             
         }
